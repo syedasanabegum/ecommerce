@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css
+">
+  <!-- Animate On Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <title>Product Details</title>
+</head>
+
+<body>
+<!-- Header -->
+<header id="header" class="header">
+  <div class="navigation">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav__hamburger">
+          <svg>
+            <use xlink:href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </div>
+
+        <div class="nav__logo">
+          <a href="./index.html" class="scroll-link">
+            FASHION
+          </a>
+        </div>
+
+        <div class="nav__menu">
+          <div class="menu__top">
+            <span class="nav__category">FASHION</span>
+            <a href="#" class="close__toggle">
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-cross"></use>
+              </svg>
+            </a>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link scroll-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#category" class="nav__link scroll-link">Category</a>
+            </li>
+            <li class="nav__item">
+              <a href="./product.html" class="nav__link scroll-link">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link scroll-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__icons">
+          <a href="./search.html" class="icon__item"><img src="./img/search.png" height="30px" width="30px"></a>
+
+          <a href="#" class="icon__item"><img src="./img/user1.png" height="30px" width="30px"></a>
+
+          <a href="#" class="icon__item"><img src="./img/cart.png" height="30px" width="30px"></a>
+
+            <span id="cart__total">2</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <!-- Products Details -->
+      <section class="section product-details__section">
+        <div class="product-detail__container">
+          <div class="product-detail__left">
+            <div class="details__container--left">
+              <div class="product__pictures">
+                <div class="pictures__container">
+                  <img class="picture" src="./img/image1.jpg" id="pic2" />
+                </div>
+                <div class="pictures__container">
+                  <img class="picture" src="./img/image2.jpg" id="pic3" />
+                </div>
+                <div class="pictures__container">
+                  <img class="picture" src="./img/image3.jpg" id="pic4" />
+                </div>
+                <div class="pictures__container">
+                  <img class="picture" src="./img/image4.jpg" id="pic5" />
+                </div>
+              </div>
+              <div class="product__picture" id="product__picture">
+                <div class="rect" id="rect"></div>
+                <div class="picture__container">
+                  <img src="./img/image1.jpg" id="pic" />
+                </div>
+              </div>
+              <div class="zoom" id="zoom"></div>
+            </div>
+
+            <div class="product-details__btn">
+              <a class="add" href="#">
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-cart-plus"></use>
+                  </svg>
+                </span>
+                ADD TO CART</a>
+              <a class="buy" href="#">
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-credit-card"></use>
+                  </svg>
+                </span>
+                BUY NOW
+              </a>
+            </div>
+          </div>
+
+          <div class="product-detail__right">
+            <div class="product-detail__content">
+              <h3>T-Shirt</h3>
+              <div class="price">
+                <span class="new__price">$25.99</span>
+              </div>
+              
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                a doloribus iste natus et facere?
+                dolor sit amet consectetur adipisicing elit. Sunt
+                a doloribus iste natus et facere?
+              </p>
+              <div class="product__info-container">
+                <ul class="product__info">
+                  <li class="select">
+                    <div class="select__option">
+                      <label for="colors">Color</label>
+                      <select name="colors" id="colors" class="select-box">
+                        <option value="black">black</option>
+                        <option value="blue">blue</option>
+                        <option value="red">red</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+
+                    <div class="input-counter">
+                      <span>Quantity:</span>
+                      <div>
+                        <span class="minus-btn">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-minus"></use>
+                          </svg>
+                        </span>
+                        <input type="text" min="1" value="1" max="10" class="counter-btn">
+                        <span class="plus-btn">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-plus"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <span>Subtotal:</span>
+                    <a href="#" class="new__price">$25.99</a>
+                  </li>
+                  <li>
+                    <span>Brand:</span>
+                    <a href="#">Levi's</a>
+                  </li>
+                  <li>
+                    <span>Availability:</span>
+                    <a href="#" class="in-stock">In Stock (7 Items)</a>
+                  </li>
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-detail__bottom">
+          <div class="title__container tabs">
+
+            <div class="section__titles category__titles ">
+              <div class="section__title detail-btn active" data-id="description">
+                <span class="dot"></span>
+                <h1 class="primary__title">Description</h1>
+              </div>
+            </div>
+
+            <div class="section__titles">
+              <div class="section__title detail-btn" data-id="reviews">
+                <span class="dot"></span>
+                <h1 class="primary__title">Reviews</h1>
+              </div>
+            </div>
+
+            <div class="section__titles">
+              <div class="section__title detail-btn" data-id="shipping">
+                <span class="dot"></span>
+                <h1 class="primary__title">Shipping Details</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail__content">
+            <div class="content active" id="description">
+              <p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam
+                dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus an sullamcorper mattis drostique des
+                commodo pharetras loremos.Donec pretium egestas sapien et mollis.
+              </p>
+              <h2>Specifications</h2>
+              <ul>
+                <li>Half sleeves</li>
+                <li>Mock Collar</li>
+                <li>Unlined</li>
+                <li>100% Polyester</li>
+              </ul>
+              
+            </div>
+            <div class="content" id="reviews">
+              <h1>Customer Reviews</h1>
+              <div class="rating">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="content" id="shipping">
+              <h3>Shipping</h3>
+              <p>We can ship to virtually any address in the world. Note that there are restrictions on some products,
+                and some products cannot be shipped to international destinations.</p>
+              <p>When you place an order, we will estimate shipping and delivery dates for you based on the
+                availability of your items and the shipping options you choose. Depending on the shipping provider you
+                choose, shipping date estimates may appear on the shipping quotes page.
+              </p>
+              <p>Please also note that the shipping rates for many items we sell are weight-based. The weight of any
+                such item can be found on its detail page. To reflect the policies of the shipping companies we use, all
+                weights will be rounded up to the next full pound.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Products -->
+      <section class="section related__products">
+        <div class="title__container">
+          <div class="section__title filter-btn active">
+            <span class=" dot"></span>
+            <h1 class="primary__title">Related Products</h1>
+          </div>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-duration="1200">
+          <div class="glide" id="glide_3">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides latest-center">
+                <li class="glide__slide">
+                  <div class="product">
+                    <div class="product__header">
+                      <a href="#"><img src="img/pt11.jpg" alt="product"></a>
+                    </div>
+                    <div class="product__footer">
+                      <h3>Sweatshirts</h3>
+                      <div class="rating">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                      </div>
+                      <div class="product__price">
+                        <h4>$900</h4>
+                      </div>
+                      <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+                    </div>
+                    <ul>
+                      <li>
+                        <a data-tip="Quick View" data-place="left" href="#">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-eye"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a data-tip="Add To Wishlist" data-place="left" href="#">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a data-tip="Add To Compare" data-place="left" href="#">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-loop2"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="glide__slide">
+                  <div class="product">
+                    <div class="product__header">
+                      <a href="#"><img src="img/pt21.jpeg" alt="product"></a>
+                    </div>
+                    <div class="product__footer">
+                      <h3>Shirts</h3>
+                      <div class="rating">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                      </div>
+                      <div class="product__price">
+                        <h4>$18</h4>
+                      </div>
+                      <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+                    </div>
+                    <ul>
+                      <li>
+                        <a data-tip="Quick View" data-place="left" href="#">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-eye"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a data-tip="Add To Wishlist" data-place="left" href="#">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a data-tip="Add To Compare" data-place="left" href="#">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-loop2"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="product">
+                    <div class="product__header">
+                      <a href="#"><img src="./img/pt31.jpeg" alt="product"></a>
+                    </div>
+                    <div class="product__footer">
+                      <h3>Jackets</h3>
+                      <div class="rating">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                      </div>
+                      <div class="product__price">
+                        <h4>$20</h4>
+                      </div>
+                      <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+                    </div>
+                    <ul>
+                      <li>
+                        <a data-tip="Quick View" data-place="left" href="#">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-eye"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a data-tip="Add To Wishlist" data-place="left" href="#">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a data-tip="Add To Compare" data-place="left" href="#">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-loop2"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="product">
+                    <div class="product__header">
+                      <a href="#"><img src="./img/pt41.jpeg" alt="product"></a>
+                    </div>
+                    <div class="product__footer">
+                      <h3>Kurta</h3>
+                      <div class="rating">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                      </div>
+                      <div class="product__price">
+                        <h4>$35</h4>
+                      </div>
+                      <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+                    </div>
+                    <ul>
+                      <li>
+                        <a data-tip="Quick View" data-place="left" href="#">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-eye"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a data-tip="Add To Wishlist" data-place="left" href="#">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a data-tip="Add To Compare" data-place="left" href="#">
+                          <svg>
+                            <use xlink:href="./images/sprite.svg#icon-loop2"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                </ul>
+                </div>
+                </div>
+              </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer category" class="section footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer-top__box">
+          <h3>EXTRAS</h3>
+          <a href="#">Brands</a>
+          <a href="#">Gift Certificates</a>
+          <a href="#">Affiliate</a>
+          <a href="#">Specials</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>MY ACCOUNT</h3>
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-location"></use>
+              </svg>
+            </span>
+            42 Dream House,  7131 street, India
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-envelop"></use>
+              </svg>
+            </span>
+            company@gmail.com
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </span>
+            456-456-4512
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-paperplane"></use>
+              </svg>
+            </span>
+            Dream City, USA
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer-bottom__box">
+
+      </div>
+      <div class="footer-bottom__box">
+
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <!-- End Footer -->
+
+  <!-- Glide Carousel Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+
+  <!-- Animate On Scroll -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="./js/products.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/slider.js"></script>
+</body>
+
+</html>
